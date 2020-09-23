@@ -1,0 +1,1301 @@
+From: <Saved by Microsoft Internet Explorer 5>
+Subject: 
+Date: Sat, 6 Mar 2004 01:55:40 -0600
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0000_01C4031E.20F4C1B0";
+	type="text/html"
+X-MimeOLE: Produced By Microsoft MimeOLE V5.50.4910.0300
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01C4031E.20F4C1B0
+Content-Type: text/html;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file://E:\Projects\VB%20Development\Source%20Code\Ticker\MyTicker.htm
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content=3D"text/html; charset=3Dwindows-1252" =
+http-equiv=3DContent-Type>
+<STYLE>DIV.Title {
+	BACKGROUND-COLOR: #b89028; BORDER-BOTTOM: #b89028 2px ridge; =
+BORDER-LEFT: #b89028 2px ridge; BORDER-RIGHT: #b89028 2px ridge; =
+BORDER-TOP: #b89028 2px ridge; COLOR: white; FONT-SIZE: 16pt; =
+FONT-WEIGHT: 800; HEIGHT: 60px; PADDING-BOTTOM: 12pt; PADDING-LEFT: =
+12pt; PADDING-RIGHT: 12pt; PADDING-TOP: 12pt; WIDTH: 640px
+}
+DIV.Info {
+	BACKGROUND-COLOR: white; BORDER-BOTTOM: #b89028 2px ridge; BORDER-LEFT: =
+#b89028 2px ridge; BORDER-RIGHT: #b89028 2px ridge; BORDER-TOP: #b89028 =
+2px ridge; HEIGHT: 100px; PADDING-BOTTOM: 6pt; PADDING-LEFT: 12pt; =
+PADDING-RIGHT: 12pt; PADDING-TOP: 6pt; WIDTH: 640px
+}
+DIV.Indent {
+	BACKGROUND-COLOR: white; PADDING-BOTTOM: 4pt; PADDING-LEFT: 12pt; =
+PADDING-RIGHT: 12pt; PADDING-TOP: 4pt
+}
+DIV.Bold {
+	BACKGROUND-COLOR: white; FONT-WEIGHT: 800; PADDING-BOTTOM: 6pt; =
+PADDING-LEFT: 12pt; PADDING-RIGHT: 12pt; PADDING-TOP: 6pt
+}
+DIV.Notice {
+	BACKGROUND-COLOR: white; COLOR: red; FONT-WEIGHT: 800; PADDING-BOTTOM: =
+6pt; PADDING-LEFT: 12pt; PADDING-RIGHT: 12pt; PADDING-TOP: 6pt
+}
+</STYLE>
+
+<META content=3D"MSHTML 5.00.3516.2800" name=3DGENERATOR></HEAD>
+<BODY bgColor=3D#f2efbe style=3D"FONT-FAMILY: 'verdana'">
+<DIV align=3Dcenter>
+<DIV align=3Dcenter class=3DTitle>TICKER CONTROL SPECIFICATIONS =
+</DIV><BR>
+<DIV align=3Dleft class=3DInfo>
+<DIV class=3DIndent>
+<H3>My Ticker Control<BR><FONT size=3D-1>=A9 2004 Larry =
+Serflaten</FONT></H3>
+<P>
+<DIV class=3DNOTICE>NOTICE - The source code for this control has been =
+made freely=20
+available to the general public at various websites on the internet.=20
+<P>I RETAIN ALL COPYRIGHTS TO THIS SOURCE CODE AND ANY DERIVATIVE WORKS =
+MADE=20
+WITHOUT SIGNIFICANT ENHANCEMENT. </P></DIV>
+<P></P>
+<P>I do this to allow you to use the source code for any use you see =
+fit, but I=20
+do not allow you to claim it as your own work, or attempt to sell it, or =
+get=20
+other renumerations from it without adding significant enhancement to =
+its=20
+function and use. In other words, you can't sell this control as your =
+own work,=20
+but you can use it in your own application or product (supplying =
+significantly=20
+more functionality than this Ticker control), and sell that. </P>
+<P>You do not need to display my name or copyright information to users =
+of your=20
+applications that use this control, but please keep the control source =
+code=20
+entact, as supplied, including this page. Of course giving credit where =
+credit=20
+is due, is always a good idea! </P>
+<DIV class=3DNOTICE>The source code is provided <B>AS IS</B> with no =
+warrentee,=20
+gaurentee, or support. I have tried to make it a robust control, but it =
+is up to=20
+you to verify it will be suitable for any task you put it to.=20
+</DIV><BR><BR></DIV></DIV><BR>
+<DIV align=3Dleft class=3DInfo>
+<H3>DESCRIPTION:</H3>
+<DIV align=3Dleft class=3DIndent>The Ticker is a UserControl that =
+displays a=20
+changing value at periodic intervals while showing the value history =
+over time.=20
+The value can be set to change randomly and update automatically, or it =
+can be=20
+managed under programmed control. The Ticker can be used to provide a =
+randomly=20
+changing value between adjustable minimum and maximum values, or it can =
+be used=20
+to display the history for a user supplied changing value.=20
+<P>The displayed history can be ran in any one of four directions, with =
+the=20
+optional text representation of the current value displayed above or =
+below the=20
+history image. </P>
+<P>There are several properties supplied to adjust the appearance of the =
+
+control, the colors used, and the text. Other properties control how =
+often the=20
+value changes and how much it is allowed to change. It can be adjusted =
+to=20
+produce history images that range from very smooth to extremely jagged. =
+</P>
+<P>The upper and lower limits for the chart area are separate from the =
+upper and=20
+lower limits of the displayed value. This allows for wide amplitude =
+variations=20
+in the display even for small variations in the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VAL">Value</A>.=20
+The color used to fill the area greater than the current value is =
+separate from=20
+the color used to fill the area lesser than the current value, which are =
+both=20
+separate from the color used to display the current value line. These <A =
+
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#TOP">TopColor</A>,=20
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#BOT">BotomColor</A>,=20
+and <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#LNC">LineColor</A>=20
+properties apply to the chart area of the control. The <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#BAC">BackColor</A>=20
+and <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#FOR">ForeColor</A>=20
+properties apply to the text area of the control to govern colors where =
+the text=20
+is displayed. </P><IMG align=3Dright=20
+src=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/Chart.gi=
+f">=20
+<P>A grid is available to mark off amplitude and time. The grid can be =
+shown in=20
+different ZOrder postions with respect to the chart colors. The control =
+can=20
+display the chart with, or without, its associated text. The figure on =
+the right=20
+identifies some of the more visible properties of the control. </P>
+<P></P></DIV></DIV><BR>
+<DIV align=3Dleft class=3DInfo>
+<H3>OBJECTS:</H3>
+<DIV class=3DBold>GridLines Collection </DIV>
+<DIV align=3Dleft class=3DIndent>Holds the the values used to display =
+horizontal=20
+grid lines.=20
+<P>You can have horizontal and vertical grid lines. The vertical =
+gridlines are=20
+governed by the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#GDI">GridInterval</A>=20
+property. The values for the horizonal grid lines are held in a =
+collection. For=20
+every value added to the GridLines collection that falls between <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#SMM">ScaleMin</A>=20
+and <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#SMM">ScaleMax</A>,=20
+a horizontal line will appear in the chart. </P>
+<P>The color of the grid lines is set using the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#GDC">GridColor</A>=20
+property. The ZOrder of the grid lines is governed by the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#GDZ">GridZOrder</A>=20
+property. There is no width setting for the grid lines, they are always =
+one=20
+pixel in width.<BR><BR></P></DIV></DIV><BR>
+<DIV align=3Dleft class=3DInfo>
+<H3>EVENTS:</H3>
+<P>
+<DIV =
+class=3DBold>Click()<BR>MouseDown(...)<BR>MouseMove(...)<BR>MouseUp(...) =
+
+</DIV>
+<DIV class=3DIndent>These common VB events are raised by the control to =
+pass along=20
+mouse input. The control itself takes no action in these events. </DIV>
+<P></P><A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DONU></A>
+<DIV class=3DBold>OnUpdate(ByRef Value As Double, ByVal GridSync As =
+Boolean)=20
+</DIV>
+<DIV class=3DIndent>Occurs while the control's clock is running (<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#ENA">Enabled</A>=20
+=3D True). It is fired after the value has been adjusted, but before the =
+control=20
+is re-drawn.=20
+<P>The <EM>Value</EM> parameter that is passed in, is the value that =
+will be=20
+drawn. If you change the value of that parameter, your new value will be =
+used,=20
+restricted to the values within the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VMN">ValueMin</A>=20
+to <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VMX">ValueMax</A>=20
+range. </P>
+<P>If the control is in <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#AUT">Automatic</A>=20
+mode (<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#AUT">Automatic</A>=20
+=3D True) Then the value will change randomly. </P>
+<P>If the control is not in <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#AUT">Automatic</A>=20
+mode (<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#AUT">Automatic</A>=20
+=3D False) while the clock is running, then the user must change the =
+value either=20
+here, or by the control's <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VAL">Value</A>=20
+property. </P>
+<P>If the clock is not running, (<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#ENA">Enabled</A>=20
+=3D False) this event will not fire. It is then left to the user to =
+provide timed=20
+calls to the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#UPD">Update</A>=20
+method. See the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#UPD">Update</A>=20
+method for more information about that situation. </P>
+<P>The <EM>GridSync</EM> parameter will be True if the current update =
+will=20
+include a grid line. The time interval between grid lines is dependant =
+on the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#GDI">GridInterval</A>=20
+and <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#CHI">ChangeInterval</A>=20
+settings and may not be accurate at time keeping. (it uses the standard =
+VB=20
+Timer) </P></DIV>
+<P></P></DIV><BR>
+<DIV align=3Dleft class=3DInfo>
+<H3>METHODS:</H3>
+<DIV class=3DBold>Clear() </DIV>
+<DIV class=3DIndent>Clears the chart area. </DIV>
+<DIV class=3DBold>Refresh() </DIV>
+<DIV class=3DIndent>Causes the ticker to refresh its image. </DIV><A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DUPD></A>
+<DIV class=3DBold>Update() </DIV>
+<DIV class=3DIndent>Causes the chart to increment one moment in time. =
+This method=20
+can be called at any time, but is normally called to update the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VAL">Value</A>=20
+when the clock is not running.=20
+<P>The Ticker can operate in a random <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#AUT">Automatic</A>=20
+mode, or under programmed control. In <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#AUT">Automatic</A>=20
+mode the current <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VAL">Value</A>=20
+is raised or lowered automatically during each increment of the internal =
+clock.=20
+If an external clock is used, the user must set the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VAL">Value</A>=20
+and call this method to cause the control to dispay the new value. </P>
+<P>There is a special configuration available to allow the user to use =
+the=20
+calculated slope settings, even while manually setting the value. When =
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#AUT">Automatic</A>=20
+is set to True and <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#ENA">Enabled</A>=20
+is set to False, adjustments to the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VAL">Value</A>=20
+property do not effect the current value at all. Rather, in this special =
+
+configuration, adjusting the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VAL">Value</A>=20
+property adjusts an internal target value which the current <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VAL">Value</A>=20
+will climb toward. See the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#SLR">SlopeRate</A>=20
+property for information about how the target is used. =
+</P></DIV></DIV><BR>
+<DIV align=3Dleft class=3DInfo>
+<H3>PROPERTIES:</H3>
+<DIV class=3DNotice>Most of the properties effecting the appearance of =
+the Ticker=20
+control use enumerated values that are easily set in VB's IDE. Adding =
+property=20
+pages for the control would have created additional dependancies, =
+requiring=20
+additional files to be added to any application that included this =
+control. For=20
+these reasons, I decided not to supply property pages with the control. =
+When=20
+adding this control to a project, all that needs to be included in the =
+project=20
+is the TICKER.CTL file. </DIV>
+<HR>
+
+<DIV class=3DBold>Alignment() As tcALI </DIV>
+<DIV class=3DIndent>Returns/sets the text position and justification. =
+<XMP>	Public Enum tcALI
+	  [Bottom & Centered] =3D 0
+	  [Bottom & Left Justified] =3D 1
+	  [Bottom & Right Justified] =3D 2
+	  [Top & Centered] =3D 3
+	  [Top & Left Justified] =3D 4
+	  [Top & Right Justified] =3D 5
+	End Enum
+	</XMP>To change whether the text should be displayed or not, use <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#TXS">TextStyle</A>.=20
+Other properties that effect how the text is displayed include; <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#FON">Font</A>,=20
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#FOR">ForeColor</A>,=20
+and <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#TXF">TextFormat</A>.=20
+</DIV>
+<HR>
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DAPP></A>
+<DIV class=3DBold>Appearance() As tcAPP </DIV>
+<DIV class=3DIndent>Returns/sets a value that determines the 3D effects =
+used to=20
+display the ticker's outer border. <XMP>	Public Enum tcAPP
+	  [Borderless] =3D 0
+	  [Flat] =3D 1
+	  [3D Raised] =3D 2
+	  [3D Sunken] =3D 3
+	  [Tool Raised] =3D 4
+	  [Tool Sunken] =3D 5
+	End Enum
+	</XMP></DIV>
+<HR>
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DAUT></A>
+<DIV class=3DBold>Automatic() As Boolean </DIV>
+<DIV class=3DIndent>Returns/sets the use of automatic random value =
+changes.=20
+<P>In automatic mode, the Change and Slope settings determine the next =
+value and=20
+how often the display is updated. In manual mode, the user sets the =
+value to be=20
+displayed, and calls the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#UPD">Update</A>=20
+method to display the new value. See <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#ENA">Enabled</A>=20
+for more information about using the internal timer. </P></DIV>
+<HR>
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DBAC></A>
+<DIV class=3DBold>BackColor() As OLE_COLOR </DIV>
+<DIV class=3DIndent>Returns/sets the text area background color.=20
+<P>This will also govern the color of the chart when <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#CHS">ChartStyle</A>=20
+is set to one line. </P></DIV>
+<HR>
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DBOT></A>
+<DIV class=3DBold>BottomColor() As OLE_COLOR </DIV>
+<DIV class=3DIndent>Returns/sets the color of the charted area lesser =
+than the=20
+value of the ticker line. <BR><BR></DIV>
+<HR>
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DCHI></A>
+<DIV class=3DBold>ChangeInterval() As Long </DIV>
+<DIV class=3DIndent>Returns/sets the number of milliseconds between =
+updates to the=20
+ticker value.=20
+<P>The ChangeInterval property is mapped directly to the internal =
+timer's=20
+Interval property. It directly effects how fast the display will update. =
+Use the=20
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#ENA">Enabled</A>=20
+property to turn the clock on and off. </P></DIV>
+<HR>
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DCHR></A>
+<DIV class=3DBold>ChangeRate() As Double </DIV>
+<DIV class=3DIndent>Returns/sets the percent of change used between =
+successive=20
+values.=20
+<P>This value is used in combination with the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#SLR">SlopeRate</A>=20
+and <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#SLI">SlopeInterval</A>=20
+values to help determine the angle of the slope produced by the changing =
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VAL">Value</A>.=20
+The ChangeRate determines the amount of change allowed for the next =
+internal=20
+target value. It is a percentage of the entire <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VAL">Value</A>=20
+range and is limited to values between 0 and 1. </P>
+<P>A value of .1 means the next <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VAL">Value</A>=20
+can be incremented or decremented by 10% (of the value range) from the =
+old <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VAL">Value</A>.=20
+See <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#SLR">SlopeRate</A>=20
+for further information about how to control the slope of the chart =
+image.=20
+</P></DIV>
+<HR>
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DCHS></A>
+<DIV class=3DBold>ChartStyle() As tcCHA </DIV>
+<DIV class=3DIndent>Returns/sets the appearance of the charted area of =
+the ticker.=20
+<XMP>	Public Enum tcCHA =20
+	  [One Line] =3D 0
+	  [Two Color] =3D 1
+	  [Two Color & Line] =3D 2
+	End Enum
+	</XMP>
+<P>When set to One Line, the control's <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#BAC">BackColor</A>=20
+shows in the chart area and the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#TOP">TopColor</A>=20
+and <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#BOT">BottomColor</A>=20
+properties are not used. </P></DIV>
+<HR>
+
+<DIV class=3DBold>Direction() As tcDIR </DIV>
+<DIV class=3DIndent>Returns/set the orientation and direction of the =
+ticker=20
+history. <XMP>	Public Enum tcDIR=20
+	  [North] =3D 0
+	  [South] =3D 1
+	  [West] =3D 2
+	  [East] =3D 3
+	End Enum
+	</XMP></DIV>
+<HR>
+
+<DIV class=3DBold><A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DENA></A>Enabled() As Boolean </DIV>
+<DIV class=3DIndent>Returns/sets a value that determines whether the =
+ticker=20
+updates itself continuiously.=20
+<P>The user has the option of using the internal timer to update the =
+ticker, or=20
+to call the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#UPD">Update</A>=20
+method manually. When the internal clock is used, the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#CHI">ChangeInterval</A>,=20
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#CHR">ChangeRate</A>,=20
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#SLI">SlopeInterval</A>=20
+and <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#SLR">SlopeRate</A>=20
+properties must also be adjusted to set the parameters for randomly =
+changing the=20
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VAL">Value</A>.=20
+The <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#ONU">OnUpdate</A>=20
+event fires only while the clock is running. </P>
+<P>When the internal clock is not used, the user is required to call the =
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#UPD">Update</A>=20
+method to update the Ticker's chart area. At this time the user also has =
+the=20
+option of using the automatic slope characteristics or to set the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VAL">Value</A>=20
+property prior to each call to <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#UPD">Update</A>.=20
+</P>
+<P>With the clock not running, setting the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#AUT">Automatic</A>=20
+property to True will enable the slope characteristics applied to the <A =
+
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VAL">Value</A>.=20
+In this configuration, changes to the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VAL">Value</A>=20
+property effect the internal target, not the value. When the clock is =
+not=20
+running and <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#AUT">Automatic</A>=20
+is set to False, then the slope characteristics are not used and changes =
+made to=20
+the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VAL">Value</A>=20
+property directly effects the current value. </P></DIV>
+<HR>
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DFON></A>
+<DIV class=3DBold>Font() As Font </DIV>
+<DIV class=3DIndent>Returns/set the font used for the text value.=20
+<P>The font object is a bit tricky to handle. When VB's IDE changes the =
+font=20
+under user control, the Font's Set method is called. At this time =
+changes to=20
+text size can be re-calculated. But when the user changes a font =
+property, the=20
+Font's Get method is called, which should not really trigger the=20
+re-calculations. This happens when the user uses code like <B>Font.Bold =
+=3D True=20
+</B>. For that to happen, the Ticker's font object is needed so that =
+it's=20
+properties may be set, which causes the Get method to be called instead =
+of its=20
+Set method. Even if I wanted to re-calculate the areas in the font =
+object's Get=20
+method, it would not work as desired because when the font object is =
+retrieved,=20
+its properties have not yet been set. </P>
+<P>The only way around this is to either keep the timer running all the =
+time and=20
+use it to track changes to the font, or to inform the user to follow the =
+setting=20
+of a font property with the setting of another property that would =
+normally=20
+cause a re-calculation of the chart and text areas. </P>
+<P>I opted for the latter approach, and suggest to the user to set the =
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#APP">Appearance</A>=20
+property after any changes to the font object have been made. </P></DIV>
+<HR>
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DFOR></A>
+<DIV class=3DBold>ForeColor() As OLE_COLOR </DIV>
+<DIV class=3DIndent>Returns/sets the foreground color used to display =
+the text=20
+representation of the current value. <BR><BR></DIV>
+<HR>
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DGDC></A>
+<DIV class=3DBold>GridColor() As OLE_COLOR </DIV>
+<DIV class=3DIndent>Returns/sets the color of the grid lines. There is =
+no line=20
+width property for the grid lines. <BR><BR></DIV>
+<HR>
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DGDI></A>
+<DIV class=3DBold>GridInterval() As Long </DIV>
+<DIV class=3DIndent>Returns/sets the distance between timed grid lines.=20
+<P>In a horizontally scrolling chart, the GridInterval governs the =
+spacing=20
+between the vertical grid lines. Only one value is needed to produce a =
+repeating=20
+pattern. </P>
+<P>For the horizontal grid lines, however, each of their positions must =
+be=20
+identified, and the user may elect to have any number of them. To =
+simplify their=20
+use, the GridLines collection provides an easy to use method of =
+supplying=20
+multiple values to indicate where the grid lines should be placed. The =
+values=20
+added are shown in relation to the displayed scale. Values that fall =
+outside of=20
+the full scale range, are displayed at the minimum or maximum values. =
+</P></DIV>
+<HR>
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DGDZ></A>
+<DIV class=3DBold>GridZOrder() As tcZOR </DIV>
+<DIV class=3DIndent>Returns/sets a value used to determine what parts of =
+the chart=20
+the grid will cover. <XMP>	Public Enum tcZOR  =20
+	  [All] =3D 0
+	  [Top Color] =3D 1
+	  [Bottom Color] =3D 2
+	  [Both Colors] =3D 3
+	End Enum
+	</XMP>
+<P>The grid lines always cover the background color if no other colors =
+are used.=20
+</P></DIV>
+<HR>
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DLNC></A>
+<DIV class=3DBold>LineColor() As OLE_COLOR </DIV>
+<DIV class=3DIndent>Returns/sets the color of the ticker line. =
+<BR><BR></DIV>
+<HR>
+
+<DIV class=3DBold>LineWidth() As Long </DIV>
+<DIV class=3DIndent>Returns/sets the width of the ticker line.=20
+<P>The line shown is a composite of many separate points. Another way to =
+manage=20
+it would be to keep track of the last value position, and draw a line =
+from the=20
+last value to the current value. Tests showed this method to be =
+un-workable.=20
+Un-resolved issues of lines starting from ambigious points lead to the =
+decision=20
+of only plotting a single point for each call to <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#UPD">Update</A>.=20
+</P>
+<P>Unfortunately, this can cause unconnected segments to appear on the =
+chart if=20
+the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#CHI">ChangeInterval</A>=20
+is set to larger values. If the change in position from one update point =
+to the=20
+next is larger than the width of the line, then there will be no =
+connecting line=20
+between those two points. To avoid this, either lower the scaled range, =
+or=20
+reduce the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#CHR">ChangeRate</A>=20
+value until the points are plotted close enough together to appear as a =
+solid=20
+line. </P></DIV>
+<HR>
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DIMG></A>
+<DIV class=3DBold>Image() As IPictureDisp </DIV>
+<DIV class=3DIndent>Returns the current ticker image.=20
+<P>It is a Read only property, provided in case a copy of the image is =
+needed.=20
+My efforts to find a way to respond to the WM_PAINT message have not =
+panned out.=20
+If you want to print an image of the control to the Printer, you will =
+have to=20
+use PaintPicture to place the Image on a page. </P></DIV>
+<HR>
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DSMM></A>
+<DIV class=3DBold>ScaleMax() As Double </DIV>
+<DIV class=3DIndent>Returns/sets the upper boundry of the displayed =
+chart.=20
+<P>Typically, you'll want the range of the display slightly larger than =
+the=20
+range of the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VAL">Value</A>.=20
+This keeps the displayed line from going out of the displayed chart =
+area, (Which=20
+is allowed in case that is desired). </P></DIV>
+<HR>
+
+<DIV class=3DBold>ScaleMin() As Double </DIV>
+<DIV class=3DIndent>Returns/sets the lower boundry value of the =
+displayed chart.=20
+<BR><BR></DIV>
+<HR>
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DSLI></A>
+<DIV class=3DBold>SlopeInterval() As Long </DIV>
+<DIV class=3DIndent>Returns/sets a value that determines how long a =
+slope will=20
+continue before a new target value is selected. <BR><BR></DIV>
+<HR>
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DSLR></A>
+<DIV class=3DBold>SlopeRate() As Double </DIV>
+<DIV class=3DIndent>Returns/sets the percent of change used between =
+successive=20
+peaks and valleys.=20
+<P>This property is a percentage of the full <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VAL">Value</A>=20
+range that will be used when calculating the next target value. The =
+target value=20
+is not the next value, it is an internal value that the current value =
+will head=20
+toward. How long it takes for the current value to reach the target =
+value is=20
+based on the SlopeRate and <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#SLI">SlopeInterval</A>=20
+properties as well as the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#CHR">ChangeRate</A>=20
+and <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#CHI">ChangeInterval</A>=20
+properties. </P>
+<P>The SlopeRate value is a percentage of the entire <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VAL">Value</A>=20
+range and is limited to a value between 0 and 1. A value of .1 means the =
+next=20
+target value can be incremented or decremented by 10% (of the value =
+range) from=20
+the old target value. </P>
+<P><IMG align=3Dright=20
+src=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/Rates.gi=
+f"> The=20
+figure on the right is a somewhat expanded view of a changing value. It =
+begins=20
+at the base line and moves toward a target value (A). It will continue =
+moving in=20
+that direction until it reaches the target, or until the number of =
+updates=20
+reaches the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#SLI">SlopeInterval</A>=20
+value. When the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#SLI">SlopeInterval</A>=20
+count has been reached a new target is selected (B) and the value will =
+move=20
+toward it. The amount the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VAL">Value</A>=20
+changes on each <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#UPD">Update</A>=20
+is governed by the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#CHR">ChangeRate</A>=20
+value. The time between each <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#UPD">Update</A>=20
+is governed by the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#CHI">ChangeInterval</A>=20
+property, or by the user making calls to the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#UPD">Update</A>=20
+method. </P>
+<P>At a basic level, the slope properties govern the over-all shape of =
+the line=20
+chart, while the change properties govern each incremental step. =
+</P></DIV>
+<HR>
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DTXF></A>
+<DIV class=3DBold>TextFormat() As tcFOR </DIV>
+<DIV class=3DIndent>Returns/sets the formatting of the displayed text. =
+<XMP>	Public Enum tcFOR=20
+	  [Currency] =3D 0
+	  [Fixed] =3D 1
+	  [General] =3D 2
+	  [Integer] =3D 3
+	  [Standard] =3D 4
+	End Enum
+	</XMP>
+<P>For explainations of the named formats, look up Format in VB's own =
+Help file.=20
+The Integer format is my own name used to mean just the integer part of =
+the=20
+value. </P></DIV>
+<HR>
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DTXS></A>
+<DIV class=3DBold>TextStyle() As tcTEX </DIV>
+<DIV class=3DIndent>Returns/sets a value that determines if the text =
+will be=20
+displayed as the actual value, a percentage, or not at all. <XMP>	Public =
+Enum tcTEX=20
+	  [No Text] =3D 0
+	  [Actual] =3D 1
+	  [Percentage] =3D 2
+	End Enum
+	</XMP>
+<P>The <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#TXF">TextFormat</A>=20
+setting is ignored when the TextStyle property is set to No Text or =
+Percentage.=20
+</P></DIV>
+<HR>
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DTOP></A>
+<DIV class=3DBold>TopColor() As OLE_COLOR </DIV>
+<DIV class=3DIndent>Returns/sets the color of the charted area greater =
+than the=20
+value of the ticker line. <BR><BR></DIV>
+<HR>
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DVAL></A>
+<DIV class=3DBold>Value() As Double </DIV>
+<DIV class=3DIndent>Returns/sets the current value.=20
+<P>This is the default property of the Ticker control. Setting this =
+property=20
+will normally change the value immediately, however there is a special =
+manual=20
+configuration available to allow the user to use the slope characterists =
+while=20
+updating the control manually. For more information of this special=20
+configuration see the explaination for the <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#ENA">Enabled</A>=20
+property. </P></DIV>
+<HR>
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DVMX></A>
+<DIV class=3DBold>ValueMax() As Double </DIV>
+<DIV class=3DIndent>Returns/sets the maximum allowable <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VAL">Value</A>.=20
+<BR><BR></DIV>
+<HR>
+<A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#"=20
+name=3DVMN></A>
+<DIV class=3DBold>ValueMin() As Double </DIV>
+<DIV class=3DIndent>Returns/sets the minimum allowable <A=20
+href=3D"file:///E:/Projects/VB%20Development/Source%20Code/Ticker/MyTicke=
+r.htm#VAL">Value</A>.=20
+<BR><BR></DIV></DIV><BR>
+<DIV align=3Dleft class=3DInfo>
+<H3>EXAMPLES:</H3>
+<P>
+<DIV align=3Dleft class=3DIndent>Included in the zipped package are =
+three projects=20
+you can study to see the ticker control in use. All the project files =
+are set to=20
+READ ONLY to help avoid over-writing the original files. Also the Ticker =
+control=20
+is ready to be made into a (public) ActiveX control, but the examples =
+require=20
+the control to be private to the project. For that reason you will get =
+an error=20
+message indicating that the Ticker control has to be made Private to be =
+used in=20
+the examples. Just click on OK, and VB will make the change for you. =
+</DIV>
+<DIV class=3DBold>Automatic.vbp </DIV>
+<DIV align=3Dleft class=3DIndent>A simple stock purchase game uses the =
+Ticker=20
+control to supply the randomly changing stock values. The Ticker is used =
+in=20
+automatic mode to let it govern the changing stock price.=20
+<P>To play the game, you need to buy when the stock is low, and sell =
+when the=20
+stock is high. Buying and selling is only allowed at predetermined =
+intervals.=20
+You only get one transaction per grid line. The bell sounds when a =
+transaction=20
+was successful. </P>
+<P>You have three minutes of buying and selling shares to see how rich =
+you can=20
+get. </P></DIV>
+<DIV class=3DBold>Manual.vbp </DIV>
+<DIV align=3Dleft class=3DIndent>The Ticker control can be run using an =
+external=20
+clock. This example uses an external clock (A timer on the form) to =
+provide the=20
+calls to the Update method that makes the Ticker change.=20
+<P>The automatic slope mode is set up to let you see how that works. As =
+you move=20
+the scrollbar, the Ticker's Value will follow the scrollbar position =
+delayed by=20
+the ChangeRate value. Textboxes are provided to let you change the clock =
+
+Interval and ChangeRate values to see how they affect the slope mode =
+response.=20
+</P></DIV>
+<DIV class=3DBold>Samples.vbp </DIV>
+<DIV align=3Dleft class=3DIndent>This is the form that I used to produce =
+the=20
+snapshot of Ticker examples. There is nothing for you to do except to =
+run it and=20
+see them operate.<BR><BR></DIV></DIV></DIV></BODY></HTML>
+
+------=_NextPart_000_0000_01C4031E.20F4C1B0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///E:/Projects/VB%20Development/Source%20Code/Ticker/Chart.gif
+
+R0lGODlhAAHCAPcAAAAAABgYGCEhIUoxCFo5EGNCEHNSMXNrSntrUntzUoRzWoR7WoxzIYx7WoyE
+Y5RzIZR7MZxzIZx7IZx7OZyEOaV7IaWEIaWEOaWMOaWlnK2EIa2MIa2MKa2MOa2MQq2UQq2lnK2t
+nLWMIbWMKbWUKbWUQrWtpb2UKb2UQr2cQr21rb29lL29nL29rb29vca9nMbGnMbGpcbGtcbGxs7G
+nM7Gpc7Gvc7OnM7Opc7Ovc7OztbOpdbOrdbWpdbWrdbW1t7Wrd7erd7etd7e3ufetefevefntefn
+vefn5+/nte/nve/vve/v7/fvvff39///////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAAAHCAAAI/gCfCBxI
+sKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzatzIsaPHjyBDihxJsqTJkyhTqlzJsqXLlzBjypxJs6bN
+mzhzVtTBU8cPJgSdDPnBc4gTgT2TKk0qUChRHUYH+iTIhOdBoTx/DnRa9ChSHVeHdpWaNKrOsx6t
+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
+/VRQDVVRbcKAAAA7
+
+------=_NextPart_000_0000_01C4031E.20F4C1B0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: file:///E:/Projects/VB%20Development/Source%20Code/Ticker/Rates.gif
+
+R0lGODlhKAGtAPcAAAAAAAgICBAQEBgQEBgYGCEhGCEhISkhGCkpISkpKTExITExKTExMTk5KTk5
+MTk5OUJCMUJCQkpCOUpKOUpKSlJKOVJSQlJSUlpaSlpaWmNaSmNjSmNjY2trUmtrWmtra3NrWnNz
+WnNzc3tzWnt7e4R7Y4SEa4SEhIyEa4yMc4yMjJRzIZSMc5SUc5SUlJx7IZyce5ycnKWEIaWce6Wl
+hKWlpa2EIa2MIa2lhK2thK2trbWMKbWUKbWtjLW1jLW1lLW1tb2UKb21lL29lL29vcbGnMbGxs7G
+nM7OnM7Opc7OztbOpdbWpdbWrdbW1t7Wrd7erd7etd7e3ufetefntefn5+/nte/nve/vve/v7/fv
+vff39///////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAKAGtAAAI/gC5CBxI
+sKDBgwgTKlzIsKHDhxAjSpxIsaLFixgzatzIsaPHjyBDihxJsqTJkyhTqlzJsqXLlzBjypxJs6bN
+mzhz6tzJs6fPn0CDCh1KtKjRo0iTKl3KtKnTp1CjSp1KtWrHKlKlWF2JNarWqF23ovwKNexTsmJN
+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
+1atmdatd/WpRBQQAADs=
+
+------=_NextPart_000_0000_01C4031E.20F4C1B0--
